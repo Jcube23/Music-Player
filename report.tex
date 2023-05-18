@@ -1,0 +1,67 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{tkz-euclide} % loads  TikZ and tkz-base
+\begin{document}
+
+\title{AI1110 Software Project Report}
+\author{Name: Jash Jhatakia\\
+        Roll Number: CS22BTECH11028}
+
+\maketitle
+
+\section{Introduction}
+The provided code is an implementation of a simple music player using the Pygame library in Python.
+\section{Implementation}
+The player interface is displayed on a Pygame window, allowing users to control playback, switch between songs, and view the currently playing song. The code utilizes basic Pygame functionalities for event handling, drawing shapes, and playing audio files.
+
+\subsection{Code Overview}
+The following dependencies are required to run the Music Player:
+\begin{itemize}
+\item Python
+\item Pygame
+\item NumPy
+\end{itemize}
+
+\subsection{Code Structure}
+The code is structured as follows:
+
+\begin{itemize}
+\item The code begins with importing the necessary modules: pygame, sys, numpy, and os.
+\item pygame is the primary library used for creating the graphical interface and handling events.
+\item numpy is used for array manipulation and shuffling.
+\item os is used to change the working directory and access the audio files.
+\item The Pygame library is initialised using pygame.init()
+\item The mixer module is initialized for playing audio using pygame.mixer.init().
+\item A loop iterates through the songs in the sngarr array.
+\item If the end of the sngarr is reached, the array is shuffled and appended to itself.
+\item The current song is loaded using pygame.mixer.music.load() and played using pygame.mixer.music.play().
+\item The loop continues while the song is playing or the play button status is 'pause'.
+
+\end{itemize}
+
+\section{Conclusion}
+The provided code showcases a simple music player implementation using Pygame.
+Users can control song playback, switch between songs, and view the currently playing song.
+
+The code for the Music Player can be found at:
+\textbf{https://github.com/Jcube23/Music-Player}
+\section{Images}
+\begin{figure}[h!]
+        \includegraphics[scale = 0.25]{figs/img1}
+        \caption{First Song(Paused)}
+        \label{fig:1}
+\end{figure}
+
+\begin{figure}[h!]
+        \includegraphics[scale = 0.25]{figs/img2}
+        \caption{Second Song(Paused)}
+        \label{fig:2}
+\end{figure}
+
+\begin{figure}[h!]
+       \includegraphics[scale = 0.25]{figs/img3}
+        \caption{Third Song(Playing)}
+        \label{fig:3}
+\end{figure}
+
+
+\end{document}
